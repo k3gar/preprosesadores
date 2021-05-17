@@ -1,8 +1,32 @@
+<<<<<<< HEAD
 include configuraciones.pug
+=======
+-var usuario = "Kevin"
+-var titulo = "Titulo Principal"
+-var titulos = ["Titulo Principal", "Subtitulo 1", "Subtitulo 2", "Subtitulo 3"]
+mixin caja(imagen,titulo,contenido)
+            .caja  
+                .caja__imagen: img(src="./images/"+imagen)
+                .caja__contenido 
+                    h3=titulo
+                    p=contenido
+                    a(href="") leer más 
+
+>>>>>>> b2657f866aa9a7aa2cbb55f6865e341ec8c30c95
 doctype html 
 html 
     include head.html
     body 
+<<<<<<< HEAD
         include header.pug
         block contenidos
         include footer.pug
+=======
+        header 
+            h1 PlatziGames 
+            if usuario 
+                a Hola #{usuario}
+            else 
+                a.boton Registro 
+        block contenidos
+>>>>>>> b2657f866aa9a7aa2cbb55f6865e341ec8c30c95
