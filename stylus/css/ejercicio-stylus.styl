@@ -1,11 +1,22 @@
 Fuente1 = 'Lato', sans-serif
 Fuente2 = 'Oswald', sans-serif
+color-primario = #333333
+color-secundario = #8841da
+color-claro = #fff
+
+contenedor()
+    display: flex
+    width: 90%
+    margin: 0 auto
+    padding: 30px 0
+
 *
     box-sizing: border-box
 
 body
     margin: 0
-    font-family: 'Lato', sans-serif
+    font-family: Fuente1
+    color: color-primario
 
 .buscador
     width: 100%
@@ -23,15 +34,13 @@ body
         font-size: 25px
 
 .encabezado--con-filtros
-    display: flex
-    width: 90%
-    margin: 0 auto
-    padding: 30px 0
+    contenedor()
     h2
         margin-top: 10px
         text-transform: uppercase
         font-weight: 500
         font-size: 50px
+        font-family: Fuente2
     .filtros
         width: 250px
         height: 75px
@@ -39,6 +48,14 @@ body
         margin-left: auto
         span
             text-transform: uppercase
+            font-family: Fuente2
+
         a
             margin-left: 20px
             font-size: 25px
+            color: color-primario
+
+.contenido
+    margin-bottom: 40px
+    justify-content: space-evenly
+    contenedor()
