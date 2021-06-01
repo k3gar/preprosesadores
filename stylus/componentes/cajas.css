@@ -12,12 +12,8 @@
   background-color: color-claro;
 }
 .caja__contenido span {
-  text-transform: uppercase;
   color: color-secundario;
-  font-family: Fuente2;
 }
-.caja__contenido height {
-  text-transform: uppercase;
+.caja__contenido h3 {
   font-weight: normal;
-  font-family: Fuente2;
 }

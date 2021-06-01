@@ -1,7 +1,7 @@
 .estadistica--articulos {
   height: 70px;
   padding: 20px;
-  border-top: 1px solid color-primario;
+  border-top: 1px solid opacidad(color-primario, 0.3);
 }
 .estadistica--articulos ul {
   display: -webkit-box;
@@ -15,6 +15,7 @@
 }
 .estadistica--articulos ul li {
   list-style: none;
+  color: opacidad(color-primario, 0.3);
 }
 .estadistica--articulos ul span {
   margin-left: 10px;
